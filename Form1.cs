@@ -105,7 +105,7 @@ namespace BKT_2_31_10_2024
                     cart.Add(new CartItem(selectedProduct, 1));
                 }
 
-                // Giảm số lượng sản phẩm trong kho
+                
                 selectedProduct.SoLuong--;
                 Display();
                 DisplayCart();
@@ -149,7 +149,7 @@ namespace BKT_2_31_10_2024
                 int index = ListCart.SelectedIndex;
                 CartItem selectedCartItem = cart[index];
 
-                // Tăng số lượng sản phẩm trong kho
+                
                 selectedCartItem.SP.SoLuong += selectedCartItem.SL;
                 cart.Remove(selectedCartItem);
                 Display();
